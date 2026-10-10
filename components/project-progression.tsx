@@ -1,0 +1,14 @@
+import Link from 'next/link';
+const milestones = [
+  { theme: 'March 2024 · Grade 12', title: 'Connect the physical and digital.', project: 'RFID Attendance', href: '/projects/rfid-attendance/', text: 'Learning JavaScript and server basics through an attendance prototype that earned the Best in Innovation Award in 2024.' },
+  { theme: '2024 · Grade 12', title: 'Coordinate a physical build.', project: 'Coin Sorter & Counter', href: '/projects/coin-sorter/', text: 'Leading the class build and arranging help to adapt a purchased 3D model for Philippine coins.' },
+  { theme: 'November–December 2025', title: 'Make information reviewable.', project: 'PITS', href: '/projects/pits/', text: 'Practicing Python and file handling through infrastructure records, budgets, evidence review, and public project browsing.' },
+  { theme: 'June–July 2026', title: 'Build for an academic brief.', project: 'BasCal', href: '/projects/bascal/', text: 'A commissioned calculus platform, with lessons in AI integration, mathematical notation, and research-led workflows.' },
+  { theme: 'July–August 2026', title: 'Investigate the delivery constraints.', project: 'DRRM Alert Automation', href: '/projects/drrm-alert-automation/', text: 'A working n8n workflow whose intended announcement channel remains an unresolved integration milestone.' },
+  { theme: 'September 2026 · Preparation', title: 'Prepare challenges for others.', project: 'HyperLink VI', href: '/projects/hyperlink/', text: 'An 18-challenge bank and successful verifier run. Event paperwork and approval are still pending.' },
+  { theme: 'October 2026', title: 'Build around campus safety.', project: 'SafeTap', href: '/projects/safetap/', text: 'Researching deployment, NFC, QR, and schematic floor views for a deployed application awaiting actual operational use.' },
+  { theme: 'Started October 2026', title: 'Plan software and hardware together.', project: 'Silong Hamuros', href: '/projects/silong-hamuros/', text: 'Leading features in a six-member team, with a functional Android prototype and physical hardware testing still ahead.' },
+];
+export function ProjectProgression() {
+  return <section className="progression-section wrap" aria-labelledby="progression-title"><div className="section-heading"><h2 id="progression-title">Small beginnings.<br />Wider questions.</h2><p>Starting with Grade 12 projects,<br />then exploring different kinds of responsibility.</p></div><p className="progression-intro">Project dates trace the work so far. Event approval, live adoption, and physical hardware validation are separate milestones.</p><ol className="progression-list">{milestones.map(milestone => <li key={milestone.project}><div className="milestone-label"><span>{milestone.theme}</span><Link href={milestone.href}>{milestone.project}</Link></div><div><h3>{milestone.title}</h3><p>{milestone.text}</p></div></li>)}</ol></section>;
+}

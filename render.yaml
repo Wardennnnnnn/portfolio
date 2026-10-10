@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: terincorp-portfolio
+    runtime: static
+    repo: https://github.com/Wardennnnnnn/portfolio
+    branch: main
+    buildCommand: npm ci && npm run build
+    staticPublishPath: out
+    autoDeployTrigger: off

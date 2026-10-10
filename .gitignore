@@ -1,0 +1,26 @@
+node_modules/
+.next/
+out/
+*.tsbuildinfo
+.env*
+!.env.example
+.sites-runtime/
+
+# Local agent / hosting state; never publish credentials or local settings.
+.codex/
+.impeccable/
+.openai/
+.aws/
+*.pem
+*.key
+.npmrc.local
+.DS_Store
+npm-debug.log*
+
+# Original reference captures; published copies live in public/assets/.
+/*.png
+/*.jpg
+/*.jpeg
+/*.webp
+/*.pdf
+/*.zip
