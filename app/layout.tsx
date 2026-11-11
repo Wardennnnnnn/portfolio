@@ -9,18 +9,18 @@ import { siteUrl, socialImage } from '@/lib/site';
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   alternates: { canonical: '/' },
-  title: { default: 'Don Mclaire Gonzales — Web & App Developer', template: '%s | Don Gonzales' },
-  description: 'Don Mclaire C. Gonzales is an IT student building web and mobile applications with AI-assisted development and pursuing a career in cybersecurity. Explore his projects and learning journey.',
+  title: { default: 'Don Mclaire C. Gonzales — Web and Application Developer', template: '%s | Don Gonzales' },
+  description: 'Don Mclaire C. Gonzales is a third-year Information Technology student at Batangas State University. He builds web and mobile applications and plans to pursue a career in cybersecurity. This portfolio presents his projects, leadership roles, and security work.',
   icons: { icon: '/favicon.svg' },
   openGraph: {
-    title: 'Don Mclaire Gonzales — Web & App Developer',
-    description: 'Web and application development experience, a cybersecurity career goal, and projects built with curiosity and AI assistance.',
+    title: 'Don Mclaire C. Gonzales — Web and Application Developer',
+    description: 'Web and application development projects, security review notes, and a career goal in cybersecurity.',
     type: 'website',
     url: '/',
     siteName: 'Don Mclaire Gonzales',
     images: [socialImage],
   },
-  twitter: { card: 'summary_large_image', images: [socialImage.url] },
+  twitter: { card: 'summary_large_image', title: "Don Mclaire C. Gonzales — Web and Application Developer", description: "Web and application development projects, security review notes, and a career goal in cybersecurity.", images: [socialImage.url] },
 };
 
 export const viewport: Viewport = { colorScheme: 'light dark', themeColor: '#2555e8' };

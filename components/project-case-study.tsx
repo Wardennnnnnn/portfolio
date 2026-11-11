@@ -45,7 +45,7 @@ export default async function ProjectCaseStudy({ params }: Props) {
   if (!project) notFound();
   return (
     <main id="main" className="case-study wrap">
-      <Link className="text-link back-link" href="/#work">Back to selected work</Link>
+      <Link className="text-link back-link" href="/#work">Back to projects</Link>
       <h1>{project.title}</h1>
       <p className="project-role">{project.role}</p><p className="status">{project.status}</p>
       <p className="case-intro">{project.summary}</p>
@@ -56,8 +56,8 @@ export default async function ProjectCaseStudy({ params }: Props) {
       {walkthroughs[slug] ? <ProjectWalkthrough walkthrough={walkthroughs[slug]} slug={slug} /> : <ProjectScreenshot project={project} fullSize />}
       <div className="story-grid">{project.story.map(([heading, text]) => <section key={heading}><h2>{heading}</h2><p>{text}</p></section>)}</div>
       {project.learnings && project.learnings.length > 0 && <section className="project-lessons" aria-labelledby="lessons-title">
-        <h2 id="lessons-title">What I learned through this project</h2>
-        <p className="lessons-intro">The experience I take into the next project: technical decisions, practical tradeoffs, and ways of working.</p>
+        <h2 id="lessons-title">What I learned</h2>
+        <p className="lessons-intro">Lessons from developing this project.</p>
         <ul>{project.learnings.map(lesson => <li key={lesson.title}><h3>{lesson.title}</h3><p>{lesson.detail}</p></li>)}</ul>
       </section>}
       <SecurityHistory slug={slug} />

@@ -53,6 +53,6 @@ urls={x.text for x in sitemap.findall('.//{http://www.sitemaps.org/schemas/sitem
 assert urls=={'https://terincorp.com'+p for p in paths}
 assert 'Sitemap: https://terincorp.com/sitemap.xml' in (out/'robots.txt').read_text()
 for path in ['/projects/safetap/','/projects/silong-hamuros/']:
- assert 'Security review history' in (out/path.lstrip('/')/'index.html').read_text()
+ assert 'Security review log' in (out/path.lstrip('/')/'index.html').read_text()
 print(f'PASS: {len(paths)} pages; {refs} local links/assets; anchors, image-viewer links, canonicals, OG metadata, sitemap, robots, and security-history sections.')
 print('Not checked: rendered mobile/desktop layouts, browser clicks/touch, external URL availability, or live domain/deployment.')

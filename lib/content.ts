@@ -24,24 +24,16 @@ export const projects: Project[] = [
   {
     "learnings": [
       {
-        "title": "Researching unfamiliar integrations",
-        "detail": "I learned to compare forum examples, keep notes, and adapt solutions to my own application instead of assuming an example would work unchanged."
-      },
-      {
-        "title": "Making mathematical content readable",
-        "detail": "Working on AI quizzes taught me that generating content is only one step: equations also need consistent notation, rendering, and a teacher review workflow."
-      },
-      {
-        "title": "Delivering an academic brief",
-        "detail": "I gained experience turning research requirements into a usable application and distinguishing a local defense demonstration from ongoing production hosting."
+        "title": "What I learned",
+        "detail": "When a forum solution did not work in my application, I compared several examples, kept notes on the differences, and adapted the approach to my own code."
       }
     ],
     "id": "bascal",
     "number": "01",
     "title": "BasCal",
-    "domain": "Adaptive calculus learning",
+    "domain": "Adaptive calculus learning platform",
     "status": "Locally hosted · Successfully defended",
-    "role": "Solo developer · AI-assisted development",
+    "role": "Solo developer",
     "stack": [
       "Node.js",
       "Express",
@@ -63,27 +55,27 @@ export const projects: Project[] = [
         "caption": "Reviewing generated quiz questions and explanations before assignment."
       }
     ],
-    "summary": "Turning an academic research framework into a learning platform, with 12 calculus modules, adaptive quizzes, and student progress analytics.",
+    "summary": "A learning platform based on an academic research framework. It includes 12 calculus modules, adaptive quizzes, and student progress analytics.",
     "story": [
       [
         "The brief",
-        "BasCal was commissioned for a professor’s master’s thesis at Batangas State University. I translated the research requirements into student and educator workflows rather than independently originating the research framework."
+        "A professor commissioned BasCal for a master’s thesis at Batangas State University. My task was to turn the research requirements into workflows for students and educators. The research framework itself was not my work."
       ],
       [
         "The application",
-        "The platform covers differentiation and integration through 12 modules, adaptive quizzes, learning materials, and progress analytics across five mathematical proficiency strands. Educators can manage content and review generated quizzes."
+        "The platform covers differentiation and integration across 12 modules. It provides adaptive quizzes, learning materials, and progress analytics across five mathematical proficiency strands. Educators can manage content and review generated quizzes."
       ],
       [
         "The challenge",
-        "AI integration and incorrectly displayed mathematical equations were the hardest parts. Quiz generation needed both usable output and readable calculus notation."
+        "Integrating the AI quiz generator and displaying equations correctly took the most effort. The generated questions had to be usable, and the calculus notation had to be readable."
       ],
       [
-        "How I approached it",
-        "I researched forum discussions, took notes on other developers’ solutions, and adapted relevant approaches to my application. The quiz workflow supports LaTeX notation for mathematical expressions."
+        "My approach",
+        "I read forum discussions, noted how other developers solved similar problems, and adapted the parts that applied. The quiz workflow now supports LaTeX for mathematical expressions."
       ],
       [
         "Delivery and feedback",
-        "I developed the system with AI-assisted programming, hosted it locally, and used ngrok to make it accessible during the successful defense. The professor appreciated the features and told me, “Nak, maraming salamat ha.” This feedback reflects the delivery experience; learning outcomes were not measured here."
+        "I built the system and hosted it locally. I used ngrok to make it reachable during the defense, which was successful. My professor told me, “Nak, maraming salamat ha.” I include this as an account of the delivery experience. It is not a measure of learning outcomes."
       ]
     ],
     "links": [
@@ -97,28 +89,16 @@ export const projects: Project[] = [
   {
     "learnings": [
       {
-        "title": "Planning deployment within a budget",
-        "detail": "I learned to research hosting services and their constraints before choosing a deployment approach, keeping cost in mind alongside connectivity and application requirements."
-      },
-      {
-        "title": "Designing identification alternatives",
-        "detail": "Implementing NFC and QR taught me to account for device compatibility and provide alternate check-in paths instead of depending on one scanning method."
-      },
-      {
-        "title": "Coordinating online and offline state",
-        "detail": "Offline queues and live updates gave me experience distinguishing recorded check-ins from synchronized arrivals and thinking through reconnection and duplicate records."
-      },
-      {
-        "title": "Representing space clearly",
-        "detail": "Working on the floor interface taught me to communicate what a schematic can show and where actual campus validation is still needed."
+        "title": "What I learned",
+        "detail": "Before choosing a host, I researched the available services and their limits. I weighed cost against connectivity and the application’s requirements."
       }
     ],
     "id": "safetap",
     "number": "02",
     "title": "SparTap",
-    "domain": "Campus safety & evacuation accountability",
-    "status": "Deployed · Operational use not yet tested",
-    "role": "Solo developer · AI-assisted development",
+    "domain": "Campus safety and evacuation accountability",
+    "status": "Deployed · Not yet tested in actual operations",
+    "role": "Solo developer",
     "stack": [
       "JavaScript",
       "Node.js",
@@ -161,64 +141,64 @@ export const projects: Project[] = [
         "alt": "SparTap offline records screen showing downloaded event data and offline assets",
         "caption": "Downloaded event data ready for offline check-ins."
       },
-{
+      {
         "src": "/assets/projects/spartap-sign-in-light.png",
         "width": 1920,
         "height": 939,
         "alt": "SparTap sign-in screen in light mode",
         "caption": "Campus attendance and evacuation accountability, with light and dark themes."
-},
-{
+      },
+      {
         "src": "/assets/projects/spartap-sign-in-dark.png",
         "width": 1920,
         "height": 939,
         "alt": "SparTap sign-in screen in dark mode",
         "caption": "Dark theme for the SparTap sign-in screen."
-},
-{
+      },
+      {
         "src": "/assets/projects/spartap-overview-dark.png",
         "width": 1920,
         "height": 939,
         "alt": "SparTap evacuation overview in dark mode",
         "caption": "Active earthquake drill overview in dark mode."
-},
-{
+      },
+      {
         "src": "/assets/projects/spartap-student-directory-dark.png",
         "width": 1920,
         "height": 939,
         "alt": "SparTap student directory in dark mode",
         "caption": "Student and academic block management in dark mode."
-}
+      }
     ],
-    "summary": "Connecting campus identification with classroom attendance and emergency accountability, including live check-ins and offline scan queues.",
+    "summary": "A system that links campus identification with class attendance and emergency accountability. It supports live check-ins and offline scan queues.",
     "story": [
       [
         "Why I built it",
-        "New campus identification cards and my DRRM responsibilities prompted a question: could campus identity also support student accountability during an evacuation? I proposed SparTap for Web Systems and Technologies."
+        "The university was introducing new identification cards, and I serve in a disaster risk reduction and management (DRRM) role. This raised the question of whether the same card could help account for students during an evacuation. I proposed SparTap for my Web Systems and Technologies course."
       ],
       [
         "The application",
-        "SparTap combines class attendance, emergency event check-ins, live arrival counts, unaccounted-student lists, offline scan queues, audit records, and exportable reports for administrators and class representatives."
+        "SparTap combines class attendance, emergency check-ins, live arrival counts, lists of unaccounted students, offline scan queues, audit records, and exportable reports. It is used by administrators and class representatives."
       ],
       [
         "The challenge",
-        "Deployment, NFC and QR identification, and the floor-plan interface required the most research. I explored free service options to reduce the cost of making the application accessible."
+        "Deployment, NFC and QR identification, and the floor-plan interface required the most research. I looked into free hosting options to keep the cost of access low."
       ],
       [
         "Technical decisions",
-        "The system combines Express, MySQL, and Socket.IO. NFC support depends on a compatible device and browser over HTTPS; QR and other identification methods provide alternatives. The floor view is a schematic reference, rather than a to-scale building plan."
+        "The system uses Express, MySQL, and Socket.IO. NFC requires a compatible device and a browser over HTTPS, so QR and other identification methods are available as alternatives. The floor view is a schematic reference and is not drawn to scale."
       ],
       [
         "Current status and feedback",
-        "The application is deployed, but it has not been used for actual campus operations or an emergency. Some friends liked the interface; this is informal peer feedback, with operational validation still ahead."
+        "The application is deployed but has not been used in actual campus operations or an emergency. Some friends gave positive feedback on the interface. This feedback is informal, and operational validation has yet to be done."
       ],
       [
         "Security decisions",
-        "I implemented salted scrypt password hashing, expiring sessions, HttpOnly and SameSite cookies, CSRF tokens, login-attempt limits, server-side role checks, and parameterized database writes. API tests include missing-CSRF and unauthorized-role scenarios. These are implemented controls, rather than a completed penetration test or a guarantee of security."
+        "I implemented salted scrypt password hashing, expiring sessions, HttpOnly and SameSite cookies, CSRF tokens, login attempt limits, server-side role checks, and parameterized database writes. The API tests include cases for missing CSRF tokens and unauthorized roles. These are controls I implemented. They do not amount to a completed penetration test or a guarantee of security."
       ],
       [
-        "Security work still ahead",
-        "Production cookie and HTTPS settings need deployment verification. Student-directory visibility needs a least-privilege review to confirm which records each role requires. Operational security validation remains a separate milestone before actual campus use."
+        "Remaining security work",
+        "The production cookie and HTTPS settings still need to be verified. Authenticated users can currently see the student directory, so a least-privilege review should determine which records each role needs. Operational security validation must be completed before any real campus use."
       ]
     ],
     "links": [
@@ -236,24 +216,16 @@ export const projects: Project[] = [
   {
     "learnings": [
       {
-        "title": "Python fundamentals",
-        "detail": "Building PITS helped me practice basic Python concepts and file handling while connecting them to an application with multiple user roles."
-      },
-      {
-        "title": "Scope and interface tradeoffs",
-        "detail": "I learned to prioritize working core workflows when the desired interface exceeded what I could comfortably implement, then use presentation feedback to identify improvements."
-      },
-      {
-        "title": "Making records reviewable",
-        "detail": "Budget breakdowns, evidence review, audit logs, and exports helped me think about how information needs to be organized for other people to inspect it."
+        "title": "What I learned",
+        "detail": "Building PITS gave me practice with basic Python concepts and file handling in an application that has multiple user roles."
       }
     ],
     "id": "pits",
     "number": "03",
     "title": "PITS",
     "domain": "Public infrastructure transparency",
-    "status": "Presented and defended · UI refinement",
-    "role": "Solo developer · AI-assisted development",
+    "status": "Presented and defended · Interface refinement needed",
+    "role": "Solo developer",
     "stack": [
       "Python",
       "Kivy",
@@ -267,11 +239,11 @@ export const projects: Project[] = [
       1080
     ],
     "alt": "PITS desktop interface showing project budgets, progress, and evidence awaiting administrator verification",
-    "summary": "Exploring how project maps, budget records, evidence review, and citizen reporting can make public infrastructure information easier to scrutinize.",
+    "summary": "A desktop prototype that explores how project maps, budget records, evidence review, and citizen reports can make public infrastructure information easier to review.",
     "story": [
       [
-        "The motivation",
-        "PITS explores how organized infrastructure records, budgets, progress, and evidence can support public scrutiny. A suspected ghost-project report is a concern for review, not proof of wrongdoing."
+        "Motivation",
+        "PITS examines how organized records of infrastructure, budgets, progress, and evidence can support public review. A report of a suspected ghost project is a concern that calls for review. It is not proof of wrongdoing."
       ],
       [
         "Administrator workflows",
@@ -279,19 +251,19 @@ export const projects: Project[] = [
       ],
       [
         "Moderator workflows",
-        "Moderators create projects with materials, labor, and equipment budgets; upload progress photos, engineer statements, and budget reports; update progress and status; and set project GPS coordinates. BudgetTracker provides safe, warning, critical, and exceeded states before new costs are logged."
+        "Moderators create projects with materials, labor, and equipment budgets. They upload progress photos, engineer statements, and budget reports, update progress and status, and set project GPS coordinates. BudgetTracker shows safe, warning, critical, and exceeded states before new costs are logged."
       ],
       [
         "Citizen workflows",
-        "Public users can search and filter projects, browse a progress-colored map and document galleries, comment on and like updates, report suspected ghost projects, and export project lists. Registration includes email, username-availability, and password-strength validation."
+        "Public users can search and filter projects, browse a progress-colored map and document galleries, comment on and like updates, report suspected ghost projects, and export project lists. Registration validates email, username availability, and password strength."
       ],
       [
         "The interface challenge",
-        "Achieving the interface I wanted with Kivy was difficult at my level of experience. I chose a simpler UI so I could complete the core workflows. This was a tradeoff in my implementation, rather than a claim that Python or Kivy cannot support richer interfaces."
+        "Building the interface I wanted in Kivy was difficult at my level of experience at the time. I chose a simpler design so that I could complete the core workflows. This reflects my own experience and does not reflect the limits of Python or Kivy."
       ],
       [
         "Presentation and feedback",
-        "After I presented and defended the project, my professor liked the concept and recommended more work on the UI. The listed workflows are implemented in the academic desktop prototype; public deployment and real-world adoption are not claimed."
+        "After I presented and defended the project, my professor liked the concept and recommended further work on the interface. The listed workflows are implemented in the academic desktop prototype. The project has not been publicly deployed or adopted."
       ]
     ],
     "links": [
@@ -308,79 +280,58 @@ export const experiments: Experiment[] = [
   {
     "learnings": [
       {
-        "title": "Connecting application features to physical behavior",
-        "detail": "I gained experience planning how monitoring, device freshness, faults, and control requests should fit together, while keeping implemented software separate from untested hardware behavior."
-      },
-      {
-        "title": "Partnership and business communication",
-        "detail": "Exploring the agricultural use case helped me practice talking with businesses and considering potential partnerships alongside technical development."
-      },
-      {
-        "title": "Developing an application as a team",
-        "detail": "I learned to translate feature ideas into application workflows, coordinate responsibilities, and acknowledge the original concept and weather-service contribution of a teammate."
-      },
-      {
-        "title": "Planning within financial constraints",
-        "detail": "Costing made me consider feasibility alongside the feature list. The professor’s offer of support is encouraging, but the build still needs a practical budget and hardware validation."
+        "title": "What I learned",
+        "detail": "I have planned how monitoring, device status, faults, and control requests fit together. I have also kept implemented software separate from hardware behavior that has not been tested."
       }
     ],
     "id": "silong-hamuros",
     "title": "Silong Hamuros",
-    "domain": "IoT-based coffee drying & digital monitoring",
-    "status": "Functional Android prototype · Hardware pending",
-    "role": "Project Manager · Main Project Feature Lead · Application Feature Lead · Team project",
+    "domain": "IoT-based coffee drying and digital monitoring",
+    "status": "Functional Android prototype · Hardware testing pending · Started October 2026",
+    "role": "Project Manager · Main Project Feature Lead · Application Feature Lead",
     "screenshot": "/assets/projects/silong-app-dashboard.jpeg",
-    "screenshotSize": [946, 2048],
-    "alt": "Silong Hamuros Android dashboard showing the device-not-connected message, unavailable cover status, and sample weight awaiting readings",
-    "screenshotCaption": "Android monitoring dashboard · Hardware disconnected; readings awaiting a connected device",
-    "gallery": [
-      { "src": "/assets/projects/silong-app-weather-guide.jpeg", "width": 946, "height": 2048, "alt": "Silong Android weather and drying guide showing Lipa forecast rain probability and no suitable drying window", "caption": "Weather and drying guide · Forecast information can be viewed without connected hardware; drying suggestions remain experimental." },
-      { "src": "/assets/projects/silong-app-forecast-reminders.jpeg", "width": 946, "height": 2048, "alt": "Silong Android in-app cover reminder and hourly rain forecasts with an Open-Meteo fetch timestamp", "caption": "Hourly forecasts and an in-app cover reminder · The reminder does not demonstrate physical cover movement." },
-      { "src": "/assets/projects/silong-app-farm-settings.jpeg", "width": 946, "height": 2048, "alt": "Silong Android farm settings with optional device setup, disconnected status, a rain advisory threshold, and an in-app weather advisory toggle", "caption": "Farm settings · Device connection setup, rain advisory threshold, and in-app advisory preferences." },
-      { "src": "/assets/projects/silong-design-blueprint.png", "width": 1536, "height": 1024, "alt": "Silong proposed coffee-drying system blueprint showing a protective cover, sensors, and ESP32-based architecture", "caption": "Proposed system design · Conceptual blueprint, not a photograph of a working hardware prototype." }
+    "screenshotSize": [
+      946,
+      2048
     ],
-    "summary": "A six-member team project with a functional Android prototype for coffee-drying monitoring, batch records, weather advisories, and control workflows. Physical hardware testing is still ahead.",
-    "details": "Implemented Android workflows include monitoring, batch tracking, charts, guarded cover controls, local storage, and hardware-independent weather forecasts. No physical prototype has been built.",
+    "alt": "Silong Hamuros Android dashboard showing the device-not-connected message, unavailable cover status, and sample weight awaiting readings",
+    "screenshotCaption": "Android monitoring dashboard · Hardware disconnected; waiting for readings from a connected device",
+    "gallery": [
+      {
+        "src": "/assets/projects/silong-app-weather-guide.jpeg",
+        "width": 946,
+        "height": 2048,
+        "alt": "Silong Android weather and drying guide showing Lipa forecast rain probability and no suitable drying window",
+        "caption": "Weather and drying guide · Forecast information can be viewed without connected hardware; drying suggestions remain experimental."
+      },
+      {
+        "src": "/assets/projects/silong-app-forecast-reminders.jpeg",
+        "width": 946,
+        "height": 2048,
+        "alt": "Silong Android in-app cover reminder and hourly rain forecasts with an Open-Meteo fetch timestamp",
+        "caption": "Hourly forecasts and an in-app cover reminder · The reminder does not demonstrate physical cover movement."
+      },
+      {
+        "src": "/assets/projects/silong-app-farm-settings.jpeg",
+        "width": 946,
+        "height": 2048,
+        "alt": "Silong Android farm settings with optional device setup, disconnected status, a rain advisory threshold, and an in-app weather advisory toggle",
+        "caption": "Farm settings · Device connection setup, rain advisory threshold, and in-app advisory preferences."
+      },
+      {
+        "src": "/assets/projects/silong-design-blueprint.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "Silong proposed coffee-drying system blueprint showing a protective cover, sensors, and ESP32-based architecture",
+        "caption": "Proposed system design · Conceptual blueprint, not a photograph of a working hardware prototype."
+      }
+    ],
+    "summary": "A six-member team project. The functional Android prototype covers coffee-drying monitoring, batch records, weather advisories, and control workflows. Physical hardware testing has not started.",
+    "details": "The implemented Android workflows include monitoring, batch tracking, charts, guarded cover controls, local storage, and weather forecasts that do not depend on hardware. No physical prototype has been built.",
     "story": [
       [
-        "The problem",
-        "Silong Hamuros explores digital monitoring and a planned protective cover for Kapeng Barako drying. Unexpected rain can require farmers to intervene quickly to protect drying beans."
-      ],
-      [
-        "My role and attribution",
-        "As Project Manager, Main Project Feature Lead, and Application Feature Lead, I conceptualized most of the planned prototype’s features and help develop application workflows. A teammate contributed the original coffee-drying concept and conceptualized the API service for other weather stations. The project is a collaboration among six members."
-      ],
-      [
-        "Monitoring and batch workflows",
-        "The Android prototype implements a dashboard for sample weight, weight loss, temperature, humidity, rain, and cover position when a device is connected. Batch workflows include start/end actions, initial and final weight, elapsed time, notes, and optional manual moisture-meter readings, alongside trend charts and batch history."
-      ],
-      [
-        "Controls and event records",
-        "Open, Close, Stop, and Resume workflows include checks for rain, a disconnected device, stale readings, and faults. Alerts and rain logs cover rain events, cover movements, and device updates. These application workflows still require physical ESP32 and motor validation."
-      ],
-      [
-        "Weather and farm settings",
-        "Open-Meteo forecasts work independently of hardware with an internet connection. They provide rain probability, hourly forecasts, experimental drying-window suggestions, and in-app reminders. Farm settings include the name, coordinates, advisory threshold, and advisory toggle. Background push notifications are not implemented."
-      ],
-      [
-        "Storage and integration",
-        "The application saves records and settings locally on the phone and can copy records as JSON. A companion backend provides token-based API connections and SQLite storage."
-      ],
-      [
-        "Costing and support",
-        "Costing is a major development challenge. After our idea presentation, our professor offered ₱5,000 toward development. This is an offer of support, rather than a claim that funding has already been received or that the costing challenge is resolved."
-      ],
-      [
-        "Development status",
-        "The software is a functional Android prototype. No physical hardware prototype has been built, and end-to-end sensing or motor control has not been validated. Drying suggestions remain experimental and need validation in actual drying conditions."
-      ],
-      [
-        "Security decisions",
-        "The Android app stores its access token using secure storage and requires an HTTPS backend URL in release configuration. The companion backend separates app and device credentials and restricts routes by role: device credentials submit telemetry, while app credentials request controls. It also validates input and uses parameterized SQLite statements."
-      ],
-      [
-        "Security work still ahead",
-        "The current integration is a prototype. A production setup still needs token rotation and revocation, API rate limiting, deployment verification, and physical-device testing. Implemented safeguards do not establish end-to-end hardware security or a completed security assessment."
+        "More about this project",
+        "The implemented Android workflows include monitoring, batch tracking, charts, guarded cover controls, local storage, and weather forecasts that do not depend on hardware. No physical prototype has been built."
       ]
     ],
     "dates": "Started October 2026 · Six-member team",
@@ -402,22 +353,14 @@ export const experiments: Experiment[] = [
   {
     "learnings": [
       {
-        "title": "A foundation in JavaScript",
-        "detail": "This project helped me learn coding and JavaScript by connecting a web application to a concrete attendance-recording task."
-      },
-      {
-        "title": "Researching problems independently",
-        "detail": "I learned to refer to forums when I encountered problems and use other developers’ explanations to guide my next attempt."
-      },
-      {
-        "title": "Thinking across a complete system",
-        "detail": "Working with a reader, microcontroller, network, server, and database taught me to consider how physical devices and software depend on each other."
+        "title": "What I learned",
+        "detail": "This project taught me coding and JavaScript by connecting a web application to a real attendance-recording task."
       }
     ],
     "title": "RFID Attendance Monitoring",
     "phase": "early-work",
-    "domain": "Hardware & database integration",
-    "status": "Completed · Best in Innovation Award",
+    "domain": "Hardware and database integration",
+    "status": "Completed March 2024 · Best in Innovation Award, 2024",
     "role": "Grade 12 project",
     "screenshot": "/assets/projects/rfid-hardware.jpeg",
     "screenshotSize": [
@@ -426,46 +369,30 @@ export const experiments: Experiment[] = [
     ],
     "alt": "RFID attendance hardware assembly with an ESP8266 board, PN532 NFC module, and breadboard wiring",
     "screenshotCaption": "Grade 12 project · Hardware assembly",
-    "summary": "An RFID attendance-in/out system I completed during Grade 12, connecting an ESP8266 and PN532 reader with a local PC database through a phone hotspot.",
-    "details": "I completed this project during Grade 12 and received the Best in Innovation Award for it. It brought together physical identification hardware, network connectivity, and database-backed attendance records—an early step in my experience building complete systems.",
+    "summary": "An RFID attendance-in and attendance-out system I completed in Grade 12. An ESP8266 and a PN532 reader connect to a local PC database through a phone hotspot.",
+    "details": "The project combined physical identification hardware, network connectivity, and database-backed attendance records. It was an early step in building complete systems.",
     "dates": "Completed March 2024 · Best in Innovation Award, 2024",
     "id": "rfid-attendance",
     "story": [
       [
-        "The project",
-        "For my Grade 12 project, I built an RFID attendance prototype using an ESP8266 and PN532 reader. It connected through a phone hotspot to a local PC database to record attendance in and out."
-      ],
-      [
-        "The challenge and approach",
-        "Building a web application with a server was the biggest challenge. I learned how JavaScript worked and how to code, using forum discussions to research problems I encountered."
-      ],
-      [
-        "Feedback and recognition",
-        "My professor was interested and encouraged preparing a project proposal for the new principal. No subsequent approval or school deployment is confirmed. The completed project earned the Best in Innovation Award at my graduation in 2024."
+        "More about this project",
+        "The project combined physical identification hardware, network connectivity, and database-backed attendance records. It was an early step in building complete systems."
       ]
     ]
   },
   {
     "learnings": [
       {
-        "title": "Coordinating a large group",
-        "detail": "I learned that assigned teams need regular updates so their individual tasks stay connected to the overall build."
-      },
-      {
-        "title": "Finding the right help",
-        "detail": "The model adjustment taught me to communicate a specific requirement and find someone with the file-editing skills the project needed."
-      },
-      {
-        "title": "Staying hands-on as a leader",
-        "detail": "Taking responsibility for the build taught me to stay involved in integration and progress rather than relying only on task assignments."
+        "title": "What I learned",
+        "detail": "Assigned teams need regular updates so that their individual tasks stay connected to the overall build."
       }
     ],
     "id": "coin-sorter",
-    "title": "Automated Coin Sorter & Counter",
+    "title": "Automated Coin Sorter and Counter",
     "phase": "early-work",
-    "domain": "Hardware prototyping · 3D-printed design adaptation",
-    "status": "Completed class prototype · Grade 12",
-    "role": "Primary build contributor & team lead · Class project",
+    "domain": "Hardware prototyping and 3D-printed design adaptation",
+    "status": "Completed class prototype · 2024",
+    "role": "Primary build contributor and team lead · Class project",
     "dates": "Completed 2024 · Grade 12 class project",
     "stack": [
       "3D printing",
@@ -479,28 +406,12 @@ export const experiments: Experiment[] = [
     ],
     "alt": "Coin sorter prototype electronics with a controller board, DC motor, wiring, and illuminated components",
     "screenshotCaption": "Grade 12 class project · Prototype electronics",
-    "summary": "Leading a Grade 12 class build and coordinating adaptation of a purchased coin-sorter model for Philippine coins, with motor-driven sorting and sensor-based counting.",
-    "details": "I arranged help to adjust the purchased 3D model for Philippine coins, took a primary role in the physical build, and coordinated the class teams.",
+    "summary": "A Grade 12 class build in which I served as team lead. We adapted a purchased coin-sorter model for Philippine coins, with motor-driven sorting and sensor-based counting.",
+    "details": "I arranged help to adjust the purchased 3D model for Philippine coins, took a main role in the physical build, and coordinated the class teams.",
     "story": [
       [
-        "The problem",
-        "Our class built an automated sorter and counter to reduce the repetitive work of sorting mixed Philippine peso coins."
-      ],
-      [
-        "The starting design",
-        "We used a 3D-printable model purchased from Fraens on Etsy. The original design was made for other currencies; the sorting dimensions needed adaptation for Philippine coins. The original concept and model belong to the source designer."
-      ],
-      [
-        "My contribution",
-        "I took a primary role in the build and led my classmates toward completion. For the model adjustment, I looked for someone who could edit the file and coordinated that work. My contribution was arranging the adaptation and helping integrate the prototype, rather than personally creating the original model or performing all CAD edits."
-      ],
-      [
-        "The prototype",
-        "The class prototype combined a rotating hopper, a DC motor with adjustable speed, denomination-specific openings, sensor-based counting, and a 3D-printed structure. Supported coins included new and earlier ₱1 designs, new and old ₱5 and ₱10 coins, and ₱20 coins."
-      ],
-      [
-        "Feedback",
-        "Our professor liked the project. It was a completed class prototype; no measured accuracy or throughput figures are claimed."
+        "More about this project",
+        "I arranged help to adjust the purchased 3D model for Philippine coins, took a main role in the physical build, and coordinated the class teams."
       ]
     ],
     "links": [
@@ -513,22 +424,14 @@ export const experiments: Experiment[] = [
   {
     "learnings": [
       {
-        "title": "Checking platform feasibility early",
-        "detail": "I learned to investigate whether a platform supports the intended communication workflow before treating it as the delivery channel."
-      },
-      {
-        "title": "Recognizing external constraints",
-        "detail": "Not every useful idea can be completed through the initially chosen platform. I learned to identify unresolved dependencies and reconsider the implementation path."
-      },
-      {
-        "title": "Distinguishing execution from delivery",
-        "detail": "Building the workflow taught me to separate successful processing from a complete service that actually reaches its intended recipients."
+        "title": "What I learned",
+        "detail": "I should confirm that a platform supports the intended way of communicating before I treat it as the delivery channel."
       }
     ],
     "title": "DRRM Alert Automation",
-    "domain": "Workflow automation · Public safety",
-    "status": "Working workflow prototype · Delivery pending",
-    "role": "Workflow developer · AI-assisted development",
+    "domain": "Workflow automation for public safety",
+    "status": "Working workflow prototype · Delivery pending · July–August 2026",
+    "role": "Workflow developer",
     "screenshot": "/assets/projects/drrm-n8n-workflow.jpeg",
     "screenshotSize": [
       1002,
@@ -540,26 +443,14 @@ export const experiments: Experiment[] = [
       "n8n",
       "Workflow design"
     ],
-    "summary": "An n8n workflow using PAGASA advisories to prepare DRRM alerts. The workflow runs, while a suitable announcement delivery integration remains unresolved.",
-    "details": "Intended for student-organization announcements, originally through Messenger. Workflow execution is working; platform selection and live delivery remain pending.",
+    "summary": "An n8n workflow that uses PAGASA advisories to prepare DRRM alerts. The workflow runs, but a suitable platform for delivering announcements has not been chosen.",
+    "details": "The workflow was intended for student-organization announcements, originally through Messenger. It executes correctly. The platform choice and live delivery are still pending.",
     "id": "drrm-alert-automation",
     "dates": "July–August 2026",
     "story": [
       [
-        "The motivation",
-        "My DRRM responsibilities inspired an n8n workflow for preparing weather and hazard alerts from PAGASA advisories for a student organization."
-      ],
-      [
-        "The working prototype",
-        "The workflow runs, but an alert delivery platform has not been connected. A working automation workflow does not yet constitute a live announcement service."
-      ],
-      [
-        "The integration challenge",
-        "Messenger was the intended channel because organization members are active there. I researched platform options but could not establish a suitable Messenger integration for this announcement workflow. This is an unresolved integration constraint, rather than a claim that all Messenger APIs are closed."
-      ],
-      [
-        "Feedback and next milestone",
-        "Friends were impressed by the concept, but there has been no actual organizational usage or operational feedback. Selecting a feasible delivery channel and validating advisory handling and delivery remain next milestones."
+        "More about this project",
+        "The workflow was intended for student-organization announcements, originally through Messenger. It executes correctly. The platform choice and live delivery are still pending."
       ]
     ]
   }
@@ -571,23 +462,15 @@ export const ongoingProjects = experiments.filter(project => project.phase !== '
 export const hyperlink: CtfProject = {
   "learnings": [
     {
-      "title": "Turning generated material into a reviewable bank",
-      "detail": "Preparing player files, organizer solutions, and verification checks taught me to organize AI-assisted work around explicit requirements and reproducible solution paths."
-    },
-    {
-      "title": "Designing the solving experience",
-      "detail": "Working across six categories gave me practice relating difficulty, hints, point values, and attachments to the intended player experience."
-    },
-    {
-      "title": "Separating technical readiness from event readiness",
-      "detail": "I learned that verified challenge files are one part of preparation; approval, deployment validation, and running the competition remain separate responsibilities."
+      "title": "What I learned",
+      "detail": "Preparing player files, organizer solutions, and verification checks taught me to organize my work around explicit requirements and solutions that can be reproduced."
     }
   ],
   "id": "hyperlink",
   "title": "HyperLink VI",
   "domain": "Cybersecurity challenge development",
-  "status": "Verifier passed · Event approval pending",
-  "role": "CTF Head & Sole Challenge Developer · AI-assisted development",
+  "status": "Prepared in September 2026. The challenge bank passed verification. Event approval is pending.",
+  "role": "Head and sole challenge developer",
   "screenshot": "/assets/projects/hyperlink-challenge-bank.png",
   "screenshotSize": [
     1920,
@@ -611,7 +494,7 @@ export const hyperlink: CtfProject = {
       "caption": "Nonce Sense: a cryptography challenge about ECDSA nonce reuse, with a downloadable player file."
     }
   ],
-  "summary": "An 18-challenge CTF bank across six cybersecurity categories, with organizer solutions and a successful verifier run. Event approval is pending.",
+  "summary": "I developed an 18-challenge Capture the Flag competition for a department event. The challenges cover six cybersecurity categories and progress from beginner to advanced difficulty.",
   "categories": [
     "Cryptography",
     "Forensics",
@@ -629,24 +512,16 @@ export const hyperlink: CtfProject = {
   ],
   "story": [
     [
-      "The opportunity",
-      "I was selected as CTF Head for HyperLink VI, a department organization event planned in partnership with Globe ISP. I developed the entire challenge bank using AI-assisted programming."
+      "Capture the Flag development",
+      "I developed an 18-challenge Capture the Flag competition for a department event. The challenges cover six cybersecurity categories and progress from beginner to advanced difficulty."
     ],
     [
-      "The work",
-      "I prepared 18 challenges across cryptography, forensics, reverse engineering, web exploitation, binary exploitation, and OSINT. The files include player attachments, descriptions, hints, scoring configurations, generation scripts, and organizer solutions."
+      "My work",
+      "My work included challenge-generation scripts, player files, hints, scoring configurations, organizer solutions, an automated verification tool, and preparation for CTFd deployment."
     ],
     [
-      "Design and verification",
-      "A central design concern was making a varied bank consistent and solvable. Organizer solver scripts document intended solution paths; the verifier checks metadata, required files, flag formats, and solver outputs. I ran the verifier successfully."
-    ],
-    [
-      "Deployment preparation",
-      "I also prepared CTFd configuration and deployment documentation. Passing the challenge-bank verifier establishes a preparation milestone; event operations and participant experience still require validation."
-    ],
-    [
-      "Event status",
-      "The challenge bank is prepared, while event paperwork is still in progress and approval is pending. There are no participant counts, competition outcomes, or event feedback to report yet."
+      "Current status",
+      "Prepared in September 2026. The challenge bank passed verification. Event approval is pending."
     ]
   ],
   "dates": "Preparation: September 2026 · Event approval pending"
