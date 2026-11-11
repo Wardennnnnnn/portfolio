@@ -689,3 +689,30 @@ a[data-image-viewer] { cursor: zoom-in; }
   .project-topline { gap: .75rem; }
   .project-order { flex-shrink: 0; }
 }
+
+/* Education, current training, and future goals each get their own full-width row. */
+.education-layout { display: block; }
+.education-schools { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2rem var(--layout-gap); }
+.education-schools article { min-width: 0; }
+.education-schools .small-note { margin-bottom: 0; }
+.credential-placeholder { margin-top: 2.5rem; padding: 2rem 0 0; border-top: 1px solid var(--line); background: none; border-radius: 0; }
+.training-list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2rem; margin-top: 1.5rem; }
+.training-list article { min-width: 0; }
+.training-list article > p:first-child { color: var(--fg); font-weight: 800; }
+.training-list .small-note { margin-bottom: 0; }
+.planned-learning { margin-top: 2.5rem; padding-top: 2rem; }
+.learning-goals { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem var(--layout-gap); }
+.learning-goals > div + div { margin-top: 0; }
+.education-section { padding-bottom: var(--section-space); }
+@media (max-width: 900px) { .training-list { grid-template-columns: 1fr; gap: 1.5rem; } }
+@media (max-width: 600px) {
+  .education-schools, .learning-goals { grid-template-columns: 1fr; gap: 1.5rem; }
+  .credential-placeholder { padding-inline: 0; }
+}
+.about-section { display: block; padding-block: 3rem 4rem; }
+.about-title { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem 2rem; margin-bottom: 2rem; }
+.about-title .signature { margin-top: 0; font-size: 1.25rem; }
+.about-copy { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2rem var(--layout-gap); max-width: none; }
+.about-copy > div { min-width: 0; max-width: var(--reading-width); }
+.about-copy h3 { margin: 0 0 .75rem; }
+@media (max-width: 700px) { .about-copy { grid-template-columns: 1fr; } }
