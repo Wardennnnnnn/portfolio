@@ -289,34 +289,41 @@ export const experiments: Experiment[] = [
     "domain": "IoT-based coffee drying and digital monitoring",
     "status": "Functional Android prototype · Hardware testing pending · Started October 2026",
     "role": "Project Manager · Main Project Feature Lead · Application Feature Lead",
-    "screenshot": "/assets/projects/silong-app-dashboard.jpeg",
+    "screenshot": "/assets/projects/silong-v2-demo-dashboard-light.png",
     "screenshotSize": [
       946,
       2048
     ],
-    "alt": "Silong Hamuros Android dashboard showing the device-not-connected message, unavailable cover status, and sample weight awaiting readings",
-    "screenshotCaption": "Android monitoring dashboard · Hardware disconnected; waiting for readings from a connected device",
+    "alt": "Silong Hamuros v2 dashboard in light mode with Demo selected, simulated sensor readings, and an open cover illustration",
+    "screenshotCaption": "Updated Android dashboard · Demo mode with simulated readings and cover behavior.",
     "gallery": [
       {
-        "src": "/assets/projects/silong-app-weather-guide.jpeg",
+        "src": "/assets/projects/silong-v2-demo-readings-light.png",
         "width": 946,
         "height": 2048,
-        "alt": "Silong Android weather and drying guide showing Lipa forecast rain probability and no suitable drying window",
-        "caption": "Weather and drying guide · Forecast information can be viewed without connected hardware; drying suggestions remain experimental."
+        "alt": "Silong demo sample weight and drying conditions in light mode, showing simulated weight, temperature, humidity, and cover position",
+        "caption": "Demo sample weight and drying conditions · Simulated values for interface testing."
       },
       {
-        "src": "/assets/projects/silong-app-forecast-reminders.jpeg",
+        "src": "/assets/projects/silong-v2-batch-weather-light.png",
         "width": 946,
         "height": 2048,
-        "alt": "Silong Android in-app cover reminder and hourly rain forecasts with an Open-Meteo fetch timestamp",
-        "caption": "Hourly forecasts and an in-app cover reminder · The reminder does not demonstrate physical cover movement."
+        "alt": "Silong demo batch chart and Open-Meteo weather card for Lipa City in light mode",
+        "caption": "Demo batch chart alongside an Open-Meteo forecast · Weather information is separate from simulated device readings."
       },
       {
-        "src": "/assets/projects/silong-app-farm-settings.jpeg",
+        "src": "/assets/projects/silong-v2-demo-dashboard-dark.png",
         "width": 946,
         "height": 2048,
-        "alt": "Silong Android farm settings with optional device setup, disconnected status, a rain advisory threshold, and an in-app weather advisory toggle",
-        "caption": "Farm settings · Device connection setup, rain advisory threshold, and in-app advisory preferences."
+        "alt": "Silong Hamuros v2 dashboard in dark mode with Demo selected and simulated rain protection",
+        "caption": "Dark-mode dashboard · Rain protection and cover status are simulated."
+      },
+      {
+        "src": "/assets/projects/silong-v2-demo-readings-dark.png",
+        "width": 946,
+        "height": 2048,
+        "alt": "Silong demo sample weight, drying conditions, and current batch in dark mode",
+        "caption": "Dark-mode monitoring and batch view · Simulated readings; physical hardware testing remains pending."
       },
       {
         "src": "/assets/projects/silong-design-blueprint.png",
