@@ -3,15 +3,15 @@ import { useReducer } from 'react';
 import Link from 'next/link';
 import { demoReducer, demoStudents, initialDemoState } from '@/lib/demo-state';
 import { useHydrated } from './use-hydrated';
-export function SafeTapDemo() {
+export function SparTapDemo() {
   const [state, dispatch] = useReducer(demoReducer, initialDemoState);
   const ready = useHydrated();
   const checked = state.synced.length + state.queued.length;
   const complete = checked === demoStudents.length;
   return <section className="demo-section wrap" id="safetap-demo" aria-labelledby="demo-title">
-    <div className="section-heading"><h2 id="demo-title">Try the idea.<br />See the difference.</h2><p>A SafeTap interaction demo.<br />Fictional students. Everything stays in this page.</p></div>
+    <div className="section-heading"><h2 id="demo-title">Try the idea.<br />See the difference.</h2><p>A SparTap interaction demo.<br />Fictional students. Everything stays in this page.</p></div>
     <div className="demo-layout">
-      <div className="demo-guide"><h3>Connection lost.<br />Check-ins continue.</h3><p>Tap a student to record an arrival. Switch offline, record another, then reconnect to synchronize the queue.</p><div className="demo-flow" aria-label="Check-in workflow"><span>Record arrival</span><span>Queue if offline</span><span>Sync on reconnect</span></div><p className="demo-explainer">A queued arrival is recorded on this device. It joins the shared count after synchronization.</p><Link className="text-link" href="/projects/safetap/">Explore SafeTap’s actual workflows</Link></div>
+      <div className="demo-guide"><h3>Connection lost.<br />Check-ins continue.</h3><p>Tap a student to record an arrival. Switch offline, record another, then reconnect to synchronize the queue.</p><div className="demo-flow" aria-label="Check-in workflow"><span>Record arrival</span><span>Queue if offline</span><span>Sync on reconnect</span></div><p className="demo-explainer">A queued arrival is recorded on this device. It joins the shared count after synchronization.</p><Link className="text-link" href="/projects/safetap/">Explore SparTap’s actual workflows</Link></div>
       <div className="demo-console">
         <div className="demo-toolbar"><span className="connection-state"><span className={`connection-dot${state.online ? '' : ' offline'}`} aria-hidden="true" />{state.online ? 'Demo online' : 'Demo offline'}</span><button className="connection-button" disabled={!ready} type="button" onClick={() => dispatch({ type: 'connection' })}>{state.online ? 'Switch offline' : 'Reconnect & sync'}</button></div>
         <div className="arrival-count"><span><strong>{state.synced.length}</strong> / {demoStudents.length}</span><p>Synced arrivals<span>{state.queued.length} queued on this device · {demoStudents.length - checked} awaiting</span></p></div>

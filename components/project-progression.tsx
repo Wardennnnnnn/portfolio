@@ -6,7 +6,7 @@ const milestones = [
   { theme: 'June–July 2026', title: 'Build for an academic brief.', project: 'BasCal', href: '/projects/bascal/', text: 'A commissioned calculus platform, with lessons in AI integration, mathematical notation, and research-led workflows.' },
   { theme: 'July–August 2026', title: 'Investigate the delivery constraints.', project: 'DRRM Alert Automation', href: '/projects/drrm-alert-automation/', text: 'A working n8n workflow whose intended announcement channel remains an unresolved integration milestone.' },
   { theme: 'September 2026 · Preparation', title: 'Prepare challenges for others.', project: 'HyperLink VI', href: '/projects/hyperlink/', text: 'An 18-challenge bank and successful verifier run. Event paperwork and approval are still pending.' },
-  { theme: 'October 2026', title: 'Build around campus safety.', project: 'SafeTap', href: '/projects/safetap/', text: 'Researching deployment, NFC, QR, and schematic floor views for a deployed application awaiting actual operational use.' },
+  { theme: 'October 2026', title: 'Build around campus safety.', project: 'SparTap', href: '/projects/safetap/', text: 'Researching deployment, NFC, QR, and schematic floor views for a deployed application awaiting actual operational use.' },
   { theme: 'Started October 2026', title: 'Plan software and hardware together.', project: 'Silong Hamuros', href: '/projects/silong-hamuros/', text: 'Leading features in a six-member team, with a functional Android prototype and physical hardware testing still ahead.' },
 ];
 export function ProjectProgression() {

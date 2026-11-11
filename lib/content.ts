@@ -115,7 +115,7 @@ export const projects: Project[] = [
     ],
     "id": "safetap",
     "number": "02",
-    "title": "SafeTap",
+    "title": "SparTap",
     "domain": "Campus safety & evacuation accountability",
     "status": "Deployed · Operational use not yet tested",
     "role": "Solo developer · AI-assisted development",
@@ -129,48 +129,76 @@ export const projects: Project[] = [
     "screenshot": "/assets/projects/safetap-overview.png",
     "screenshotSize": [
       1920,
-      1080
+      939
     ],
-    "alt": "SafeTap administrator evacuation overview with building and floor accountability panels",
+    "alt": "SparTap evacuation overview during an active earthquake drill",
     "gallery": [
       {
         "src": "/assets/projects/safetap-student-directory.png",
         "width": 1920,
-        "height": 1080,
-        "alt": "SafeTap administrator directory with students and academic blocks",
+        "height": 939,
+        "alt": "SparTap administrator directory with students and academic blocks",
         "caption": "Managing student records and class blocks."
       },
       {
         "src": "/assets/projects/safetap-scanner.png",
         "width": 1920,
         "height": 1080,
-        "alt": "SafeTap representative check-in screen with NFC, QR, search, and ID-photo scan options",
+        "alt": "SparTap representative check-in screen with NFC, QR, search, and ID-photo scan options",
         "caption": "Representative check-in with NFC and alternative identification methods."
       },
       {
         "src": "/assets/projects/safetap-offline-setup.png",
         "width": 1920,
         "height": 1080,
-        "alt": "SafeTap offline records screen before downloading event data",
+        "alt": "SparTap offline records screen before downloading event data",
         "caption": "Offline preparation before event data is downloaded."
       },
       {
         "src": "/assets/projects/safetap-offline-ready.png",
         "width": 1920,
         "height": 1080,
-        "alt": "SafeTap offline records screen showing downloaded event data and offline assets",
+        "alt": "SparTap offline records screen showing downloaded event data and offline assets",
         "caption": "Downloaded event data ready for offline check-ins."
-      }
+      },
+{
+        "src": "/assets/projects/spartap-sign-in-light.png",
+        "width": 1920,
+        "height": 939,
+        "alt": "SparTap sign-in screen in light mode",
+        "caption": "Campus attendance and evacuation accountability, with light and dark themes."
+},
+{
+        "src": "/assets/projects/spartap-sign-in-dark.png",
+        "width": 1920,
+        "height": 939,
+        "alt": "SparTap sign-in screen in dark mode",
+        "caption": "Dark theme for the SparTap sign-in screen."
+},
+{
+        "src": "/assets/projects/spartap-overview-dark.png",
+        "width": 1920,
+        "height": 939,
+        "alt": "SparTap evacuation overview in dark mode",
+        "caption": "Active earthquake drill overview in dark mode."
+},
+{
+        "src": "/assets/projects/spartap-student-directory-dark.png",
+        "width": 1920,
+        "height": 939,
+        "alt": "SparTap student directory in dark mode",
+        "caption": "Student and academic block management in dark mode."
+}
     ],
     "summary": "Connecting campus identification with classroom attendance and emergency accountability, including live check-ins and offline scan queues.",
     "story": [
       [
         "Why I built it",
-        "New campus identification cards and my DRRM responsibilities prompted a question: could campus identity also support student accountability during an evacuation? I proposed SafeTap for Web Systems and Technologies."
+        "New campus identification cards and my DRRM responsibilities prompted a question: could campus identity also support student accountability during an evacuation? I proposed SparTap for Web Systems and Technologies."
       ],
       [
         "The application",
-        "SafeTap combines class attendance, emergency event check-ins, live arrival counts, unaccounted-student lists, offline scan queues, audit records, and exportable reports for administrators and class representatives."
+        "SparTap combines class attendance, emergency event check-ins, live arrival counts, unaccounted-student lists, offline scan queues, audit records, and exportable reports for administrators and class representatives."
       ],
       [
         "The challenge",
@@ -200,7 +228,7 @@ export const projects: Project[] = [
       ],
       [
         "Visit application",
-        "https://safetap-u6ur.onrender.com/"
+        "https://spartap.terincorp.com/"
       ]
     ],
     "dates": "October 2026"

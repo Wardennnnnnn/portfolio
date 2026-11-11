@@ -18,7 +18,7 @@ On the same LAN, open `http://192.168.1.225:3000/` while the owner's dev server 
 
 ## Security content
 
-SafeTap and Silong case studies describe source-backed controls and remaining review work. These are preliminary code observations, not penetration-test findings. Source applications were not modified, and their test suites were not executed in this portfolio session.
+SparTap and Silong case studies describe source-backed controls and remaining review work. These are preliminary code observations, not penetration-test findings. Source applications were not modified, and their test suites were not executed in this portfolio session.
 
 `lib/security-history.ts` retains dated public summaries. Current statuses are Needs review and Hardening planned. No new vulnerability severity, affected version, or successful remediation has been invented. For a confirmed future finding, record the actual affected release/commit, date, scope, and evidence. Once repaired, append a Fix verified entry with the actual fixed version, validation outcome, and `resolves` set to the original entry ID. Keep the original finding unchanged. Publish curated summaries rather than raw logs containing credentials, student data, or private operational information.
 

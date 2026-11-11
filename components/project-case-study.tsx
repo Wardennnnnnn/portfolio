@@ -1,6 +1,6 @@
 import { ProjectWalkthrough } from '@/components/project-walkthrough';
 import { walkthroughs } from '@/lib/walkthroughs';
-import { SafeTapDemo } from '@/components/safetap-demo';
+import { SparTapDemo } from '@/components/safetap-demo';
 import { CtfPlayground } from '@/components/ctf-playground';
 import type { Metadata } from 'next';
 import { socialImage } from '@/lib/site';
@@ -71,7 +71,7 @@ export default async function ProjectCaseStudy({ params }: Props) {
           <figcaption>{image.caption}</figcaption>
         </figure>)}</div>
       </section>}
-      {slug === 'safetap' && <SafeTapDemo />}
+      {slug === 'safetap' && <SparTapDemo />}
       {slug === 'hyperlink' && <div className="case-ctf"><CtfPlayground /></div>}
       <div className="case-contact"><Link className="text-link" href="/#contact">Talk to me about a project</Link></div>
     </main>
