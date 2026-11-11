@@ -130,6 +130,8 @@ h1 span { color: var(--accent); }
 details summary { cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 1rem; list-style: none; font-size: .95rem; font-weight: 800; padding: .8rem 0; border-bottom: 1px solid var(--line); }
 details summary::-webkit-details-marker { display: none; }
 details summary:hover { color: var(--accent); }
+.project-story > summary { border-bottom: 0; }
+.project-story[open] > summary { border-bottom: 1px solid var(--line); }
 .plus { width: 16px; height: 16px; position: relative; flex-shrink: 0; }
 .plus::before, .plus::after { content: ''; position: absolute; background: currentColor; height: 1px; width: 14px; left: 1px; top: 7px; }
 .plus::after { transform: rotate(90deg); }

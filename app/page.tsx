@@ -66,6 +66,8 @@ export default function HomePage() {
     </div>
     <div className="credential-placeholder">
       <h3>Training and professional development</h3>
+      <p>ServiceNow training</p>
+      <p className="small-note">In progress · Certification not yet obtained</p>
       <p>Google Cybersecurity Certificate — Coursework</p>
       <p className="small-note">Coursework completed · Certificate not obtained</p>
       <p>SAGIP — DRRM Training</p>
