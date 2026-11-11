@@ -67,7 +67,7 @@ export default function HomePage() {
     <div className="credential-placeholder">
       <h3>Training and professional development</h3>
       <p>ServiceNow training — CSA and CAD preparation</p>
-      <p className="small-note">Enrolled · Onboarding stage · Certifications not yet earned</p>
+      <p className="small-note">In progress · Week 2 · Certifications not yet earned</p>
       <p className="small-note">Courses cover administration, scripting, application development, IT service management, and introductory ServiceNow micro-certification training.</p>
       <p>Google Cybersecurity Certificate — Coursework</p>
       <p className="small-note">Coursework completed · Certificate not obtained</p>
