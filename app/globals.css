@@ -595,3 +595,95 @@ a[data-image-viewer] { cursor: zoom-in; }
 .security-projects p { color: var(--muted); }
 .security-projects .text-link { display: inline-block; margin-top: 1rem; }
 @media (max-width: 720px) { .security-projects { grid-template-columns: 1fr; gap: 2rem; } }
+
+/* Reading proportions for the revised, full-sentence portfolio copy. */
+:root {
+  --layout-gap: clamp(2rem, 4vw, 4rem);
+  --reading-width: 68ch;
+  --section-space: clamp(3rem, 6vw, 5rem);
+}
+.hero-composition {
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+  align-items: start;
+  gap: var(--layout-gap);
+  margin-top: 2.5rem;
+}
+.hero-statement { min-width: 0; }
+.hero-statement h1 {
+  font-size: clamp(2.25rem, 4vw, 3.5rem);
+  line-height: 1.12;
+  letter-spacing: -.03em;
+  max-width: 21ch;
+  overflow-wrap: break-word;
+}
+.hero-statement > p { max-width: 56ch; margin-top: 1.5rem; }
+.hero-showcase { align-self: start; }
+.native-showcase legend { max-width: 34ch; font-size: 1.125rem; }
+.hero-rule { margin-top: var(--section-space); }
+.section-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+  align-items: start;
+  gap: 1.5rem var(--layout-gap);
+  margin-bottom: 2.5rem;
+}
+.section-heading > h2 { max-width: 22ch; font-size: clamp(1.875rem, 3vw, 2.5rem); }
+.section-heading > p { max-width: 48ch; padding-top: .3rem; }
+.work { padding-top: var(--section-space); }
+.project { align-items: start; gap: 2rem var(--layout-gap); }
+.project-info, .project > .project-image { align-self: start; }
+.project > .project-image { margin-top: .5rem; }
+.project h3 { font-size: clamp(2.25rem, 3.5vw, 3rem); }
+.project-topline { align-items: baseline; }
+.project-summary, .project-learning p { max-width: var(--reading-width); }
+.cyber-layout { grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: var(--layout-gap); }
+.cyber-layout h2 { font-size: clamp(1.875rem, 3vw, 2.5rem); max-width: 24ch; }
+.cyber-role { display: block; margin-top: .75rem; font-size: .6em; line-height: 1.35; letter-spacing: -.01em; }
+.cyber-subtitle { margin-bottom: 1rem; }
+.about-section { grid-template-columns: minmax(0, .55fr) minmax(0, 1.45fr); gap: var(--layout-gap); }
+.about-copy { max-width: var(--reading-width); }
+.about-title h2 { font-size: clamp(1.875rem, 3vw, 2.5rem); }
+.education-layout { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--layout-gap); align-items: start; }
+.education-layout > div, .experience-list article, .experiment > div, .walkthrough-panel > div { min-width: 0; }
+.progression-list li { align-items: start; }
+.progression-list p { max-width: var(--reading-width); }
+.story-grid > :only-child, .project-lessons li:only-child { grid-column: 1 / -1; max-width: var(--reading-width); }
+.contact-heading { grid-template-columns: minmax(0, .55fr) minmax(0, 1.45fr); gap: var(--layout-gap); align-items: start; }
+.contact-heading p { max-width: 60ch; }
+.contact-heading h2 { font-size: clamp(2rem, 3.5vw, 3rem); }
+@media (max-width: 1000px) {
+  .section-heading { grid-template-columns: 1fr; gap: 1rem; }
+  .section-heading > p { max-width: var(--reading-width); padding-top: 0; margin-top: 0; }
+  .cyber-layout, .education-layout { grid-template-columns: 1fr; gap: 2.5rem; }
+  .cyber-layout > div { min-width: 0; }
+  .cyber-right { max-width: 46rem; }
+  .credential-placeholder { width: 100%; }
+}
+@media (max-width: 900px) {
+  .hero-composition { grid-template-columns: 1fr; gap: 2.5rem; }
+  .hero-statement h1 { max-width: 23ch; font-size: clamp(2.25rem, 5.6vw, 3rem); }
+  .hero-statement > p { max-width: var(--reading-width); }
+  .hero-showcase { width: 100%; max-width: 42rem; margin-top: 0; }
+  .about-section { grid-template-columns: 1fr; gap: 2rem; }
+  .about-title { display: flex; align-items: baseline; flex-wrap: wrap; gap: 1rem 2rem; }
+  .signature { margin-top: 0; font-size: 1.25rem; }
+  .experience-list, .experiment { gap: 2rem; }
+  .contact-heading { grid-template-columns: 1fr; gap: 1.5rem; }
+}
+@media (max-width: 600px) {
+  .hero-composition { margin-top: 1.75rem; gap: 2.5rem; }
+  .hero-statement h1 { font-size: clamp(2rem, 8.5vw, 2.75rem); line-height: 1.15; max-width: 23ch; }
+  .hero-statement > p { margin-top: 1.25rem; }
+  .hero-actions { gap: 1rem 1.5rem; }
+  .native-showcase legend { font-size: 1rem; }
+  .section-heading { margin-bottom: 2rem; }
+  .project { padding-block: 2rem; }
+  .project > .project-image { margin-top: 0; }
+  .project h3 { font-size: 2.25rem; }
+  .cyber-role { font-size: .65em; }
+  .experiment { grid-template-columns: 1fr; }
+  .education-layout { gap: 2rem; }
+  .credential-placeholder { padding: 1.25rem; }
+  .project-topline { gap: .75rem; }
+  .project-order { flex-shrink: 0; }
+}

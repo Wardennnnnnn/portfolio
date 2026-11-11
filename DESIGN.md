@@ -23,3 +23,16 @@ Image viewing uses the clickable image itself without visible Enlarge links or c
 
 ## Final responsive pass
 Navigation reflows below 900px with wrapping links and 44px minimum navigation/theme targets. Viewer captions wrap at narrow widths. Security-history entries use dated editorial rows with visible status and validation notes. Social sharing uses a 1200 × 630 typographic image in the existing Open Sans, paper, navy, and blue palette. Responsive changes are source-reviewed; rendered browser/mobile QA remains unavailable.
+
+## Revised-copy layout repair
+The full-sentence PDF copy keeps the established paper/navy palette, blue accent, self-hosted Open Sans, native controls, and original project images. The incumbent site is the visual reference; Refero’s bundled typography guidance and Impeccable’s layout playbook inform the repair rather than a new visual direction.
+
+| Decision | Reference | Purpose |
+| --- | --- | --- |
+| Scope the hero to 32–56px with a bounded measure and top-aligned columns | Revised PDF headline; typography guidance | Keep the entire sentence readable without overpowering the project preview |
+| Use explicit title/intro tracks, stacking at 1000px | Impeccable layout guidance; longer section copy | Preserve grouping and readable paragraph widths |
+| Align project images with their titles; narrow the About title rail | Existing alternating project rows; layout assessment | Keep evidence close to its introduction and reduce empty space |
+| Separate the HyperLink name and role typographically | Existing two-column cybersecurity section | Preserve all wording with a clear hierarchy |
+| Let single-entry case-study grids span their available width | Current story/learning data | Avoid half-empty grids; retain a 68ch reading measure |
+
+Rendered QA used headless Brave at 320, 390, 820, 1024, and 1440 CSS pixels, including light and dark desktop captures. Homepage and Silong case study had no horizontal overflow. Mobile offline queuing/reconnection and CTF flag submission passed. All nine static pages retain valid local links, assets, anchors, sharing metadata, and security-log sections.

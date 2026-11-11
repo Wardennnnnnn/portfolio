@@ -58,7 +58,7 @@ export default async function ProjectCaseStudy({ params }: Props) {
       {project.learnings && project.learnings.length > 0 && <section className="project-lessons" aria-labelledby="lessons-title">
         <h2 id="lessons-title">What I learned</h2>
         <p className="lessons-intro">Lessons from developing this project.</p>
-        <ul>{project.learnings.map(lesson => <li key={lesson.title}><h3>{lesson.title}</h3><p>{lesson.detail}</p></li>)}</ul>
+        <ul>{project.learnings.map(lesson => <li key={lesson.title}>{lesson.title !== 'What I learned' && <h3>{lesson.title}</h3>}<p>{lesson.detail}</p></li>)}</ul>
       </section>}
       <SecurityHistory slug={slug} />
       {project.gallery && project.gallery.length > 0 && <section className="project-gallery" aria-labelledby="gallery-title">
